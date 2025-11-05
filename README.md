@@ -60,7 +60,6 @@ dependencies {
     app:initialPosition="0.5"/>
 
 <com.knightfiury.slidable.CircularBeforeAfterView
-
     android:id="@+id/circle"
     android:layout_width="match_parent"
     android:layout_height="300dp"
