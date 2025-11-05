@@ -74,3 +74,5 @@ dependencies {
 ```
 
 ### Attribute Set 
+|t|t|
+।`app:dividerColor`।bla bla।
