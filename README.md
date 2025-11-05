@@ -74,7 +74,12 @@ dependencies {
 ```
 
 ### Attribute Set 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| `app:dividerColor` | Content Cell  |
-| `app:dividerWidth` | Content Cell  |
+| Element | Usage |
+|---------|-------|
+| `app:beforeImage` | Sets the image that appears on the left (before) side of the slider. |
+| `app:afterImage` | Sets the image that appears on the right (after) side of the slider. |
+| `app:dividerColor` | Changes the color of the dividing line between the two images. |
+| `app:dividerWidth` | Sets the thickness of the dividing line. |
+| `app:knobColor` | Defines the color of the movable knob/handle. |
+| `app:knobRadius` | Sets the radius (size) of the knob. |
+| `app:initialPosition` | Determines the starting position of the knob (value between 0 and 1). |
