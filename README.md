@@ -40,3 +40,37 @@ dependencies {
     implementation 'com.github.KnightFiury:BeforeAfterView:1.0.0'
 }
 ```
+
+## Usage
+
+### XML Layout
+
+```xml
+<com.knightfiury.slidable.BeforeAfterView
+    android:id="@+id/square"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:beforeImage="@drawable/before"
+    app:afterImage="@drawable/after"
+    app:sliderPosition="0.5"
+app:dividerColor="@android:color/white"
+app:dividerWidth="2dp"
+app:knobColor="@android:color/white" 
+app:knobRadius="8dp"
+app:initialPosition="0.5"/>
+
+
+<com.knightfiury.slidable.CircularBeforeAfterView
+
+android:id="@+id/circle"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:beforeImage="@drawable/before"
+    app:afterImage="@drawable/after"
+    app:sliderPosition="0.5"
+app:dividerColor="@android:color/white"
+app:dividerWidth="2dp"
+app:knobColor="@android:color/white" 
+app:knobRadius="8dp"
+app:initialPosition="0.5"/>
+```
