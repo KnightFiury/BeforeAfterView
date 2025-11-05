@@ -31,3 +31,12 @@ allprojects {
     }
 }
 ```
+
+2. Add the dependency to your app-level `build.gradle`:
+
+
+```gradle
+dependencies {
+    implementation 'com.github.KnightFiury:BeforeAfterView:1.0.0'
+}
+```
