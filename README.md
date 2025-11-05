@@ -74,5 +74,7 @@ dependencies {
 ```
 
 ### Attribute Set 
-|t|t|
-।`app:dividerColor`।bla bla।
+| First Header  | Second Header |
+| ------------- | ------------- |
+| `app:dividerColor` | Content Cell  |
+| `app:dividerWidth` | Content Cell  |
