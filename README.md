@@ -53,7 +53,7 @@ dependencies {
     app:beforeImage="@drawable/before"
     app:afterImage="@drawable/after"
     app:sliderPosition="0.5"
-app:dividerColor="@android:color/white"
+	app:dividerColor="@android:color/white"
 app:dividerWidth="2dp"
 app:knobColor="@android:color/white" 
 app:knobRadius="8dp"
