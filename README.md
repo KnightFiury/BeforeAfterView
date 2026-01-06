@@ -4,7 +4,7 @@
 
 A lightweight Android custom view to display **before and after images with a slider**. Perfect for image comparisons in apps.
 
-![BeforeAfterView Example](example_screenshot.png)
+![BeforeAfterView Example](https://raw.githubusercontent.com/KnightFiury/BeforeAfterView/refs/heads/main/sample.gif)
 
 ---
 
