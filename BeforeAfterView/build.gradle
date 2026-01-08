@@ -3,19 +3,16 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.github.knightfiury'  
-version = '1.0.0'                   
-
 android {
     compileSdk 34
 
-    useLibrary 'org.apache.http.legacy'
+    namespace 'knightfiury.slidable'  
 
     defaultConfig {
         minSdk 16
         targetSdk 34
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.2"  
     }
 
     buildTypes {
@@ -28,17 +25,26 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7  
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-// JitPack publishing
-publishing {
-    publications {
-        release(MavenPublication) {
-            from components.release
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.KnightFiury'  // Your GitHub username (case-sensitive; adjust if needed)
+                artifactId = 'before-after-view'    // Lowercase artifact name
+                version = '1.0.2'                   // Match versionName above
+            }
         }
     }
 }
