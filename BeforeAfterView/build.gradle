@@ -6,13 +6,12 @@ plugins {
 android {
     compileSdk 34
 
-    namespace 'knightfiury.slidable'  
-
     defaultConfig {
+        applicationId "knightfiury.slidable" 
         minSdk 16
         targetSdk 34
         versionCode 1
-        versionName "1.0.2"  
+        versionName "1.0.4"  
     }
 
     buildTypes {
@@ -41,10 +40,11 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.KnightFiury'  // Your GitHub username (case-sensitive; adjust if needed)
-                artifactId = 'before-after-view'    // Lowercase artifact name
-                version = '1.0.2'                   // Match versionName above
+                groupId = 'com.github.KnightFiury'  
+                artifactId = 'BeforeAfterView'    
+                version = '1.0.4'                   
             }
         }
     }
 }
+
