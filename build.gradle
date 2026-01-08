@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.3'  // Downgraded for Java 7 compatibility
+        classpath 'com.android.tools.build:gradle:7.6.6'  // Downgraded for Java 7 compatibility
         }
 }
 
