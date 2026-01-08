@@ -10,7 +10,7 @@ android {
         minSdk 16
         targetSdk 34
         versionCode 1
-        versionName "1.0.6"
+        versionName "1.0.7"
     }
 
     buildTypes {
@@ -24,7 +24,7 @@ android {
         viewBinding true
     }
 
-    // Compile with Java 8 but generate Java 7 bytecode
+    // Compile with Java 8, target Java 7 bytecode
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_7
@@ -35,15 +35,14 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-// Publishing setup for JitPack
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId = 'com.github.KnightFiury'
-            artifactId = 'BeforeAfterView'
-            version = '1.0.6'
-
-            afterEvaluate {
+// Publish the release variant to Maven for JitPack
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.KnightFiury'
+                artifactId = 'BeforeAfterView'
+                version = 'v1.0.7'
                 from components.release
             }
         }
