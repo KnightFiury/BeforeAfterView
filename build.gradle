@@ -4,8 +4,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.6.6'  // Downgraded for Java 7 compatibility
-        }
+        classpath 'com.android.tools.build:gradle:7.6.6'
+    }
 }
 
 allprojects {
@@ -15,7 +15,10 @@ allprojects {
     }
 }
 
+plugins {
+    id 'maven-publish' apply false
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
