@@ -33,7 +33,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-    implementation 'com.github.KnightFiury:CompareView:v1.0.6'
+    implementation 'com.github.KnightFiury:CompareView:v1.0.7'
 }
 ```
 
@@ -76,15 +76,10 @@ dependencies {
 ```java
 BeforeAfterView view = findViewById(R.id.beforeAfterView);
 
-// Set images programmatically
-view.setBeforeImage(BitmapFactory.decodeResource(getResources(), R.drawable.before));
-view.setAfterImage(BitmapFactory.decodeResource(getResources(), R.drawable.after));
-
 // Animate the divider from one position to another
 // move(float start, float end)
 // start: starting position 0.0f to 1.0f
 // end: ending position 0.0f to 1.0f
-view.move(0.0f, 1.0f);  // animate from left to right
 view.move(1.0f, 0.5f);  // animate from right to center
 ```
 
@@ -108,9 +103,7 @@ view.move(1.0f, 0.5f);  // animate from right to center
 
 | Method | Description |
 |--------|-------------|
-| `setBeforeImage(Bitmap)` | Set the before image at runtime |
-| `setAfterImage(Bitmap)` | Set the after image at runtime |
-| `move(float start, float end)` | Animate the divider from `start` to `end` position (`0.0–1.0`) |
+|move(float start, float end)|Animate the divider from `start` to `end` position (`0.0–1.0`) |
 
 ---
 
