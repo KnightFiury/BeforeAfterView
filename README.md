@@ -1,5 +1,7 @@
 # Slidable
 
+[![](https://jitpack.io/v/KnightFiury/CompareView.svg)](https://jitpack.io/#KnightFiury/CompareView)
+
 A lightweight Android library providing customizable **Before/After image comparison** views.
 
 ## Views
